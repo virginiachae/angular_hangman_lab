@@ -68,7 +68,7 @@ HangmanGame.prototype.filteredWord = function() {
 HangmanGame.prototype.checkForWinner = function() {
   if(this.triesRemaining === 0) {
     console.log("Sorry, you loose.")
-    this.gameOver = true;
+    this.gameOver  = true;
     this.gameWon = false;
   // user wins if there are no more underscores in word
   } else if( !this.isLetterInWord("_", this.displayWord) ) {
